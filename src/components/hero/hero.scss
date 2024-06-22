@@ -14,7 +14,7 @@
     color: #ffffff09;
     width: 100%;
     font-weight: bold;
-    z-index: 1; // Ensure it is behind other elements
+    z-index: 1; 
   }
 
   .wrapper {
@@ -22,7 +22,7 @@
     height: 100%;
     margin: auto;
     position: relative;
-    z-index: 2; // Ensure wrapper elements are in front
+    z-index: 2; 
   }
 
   .textContainer {
@@ -80,6 +80,7 @@
     top: 0;
     right: 0;
     text-align: center;
+    z-index: 2;
 
     @include mobile {
       height: 50%;
