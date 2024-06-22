@@ -79,7 +79,7 @@ const Hero = () => {
         initial={{ y: 500, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
       >
-        <img src="/hero.png" alt="Hero" />
+        <img src="/profile.png" alt="Hero" />
       </motion.div>
     </div>
   );
