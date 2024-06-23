@@ -5,17 +5,41 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
   position: relative;
-  .social {
-    display: flex;
-    flex-direction: column-reverse;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    gap: 10px;
 
-    img {
-      height: 25px;
-      width: 25px;
+  .socialContainer {
+    position: absolute;
+    height: calc(100vh - 100px);
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    hr {
+      height: 150px;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 2;
+
+      @include mobile {
+        gap: 5px;
+      }
+
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+
+        @include mobile {
+          height: 20px;
+          width: 20px;
+        }
+      }
     }
   }
 
@@ -31,7 +55,7 @@
   }
 
   .wrapper {
-    max-width: 1200px;
+    width: 80%;
     height: 100%;
     margin: auto;
     position: relative;
@@ -40,7 +64,7 @@
 
   .textContainer {
     height: 100%;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +72,14 @@
 
     @include mobile {
       height: 50%;
-      width: 100%;
+      width: 98%;
+      gap: 15px;
+      align-items: center;
+      text-align: center;
+    }
+    @include tablet {
+      height: 50%;
+      width: 98%;
       gap: 15px;
       align-items: center;
       text-align: center;
@@ -64,6 +95,12 @@
       font-size: 78px;
 
       @include mobile {
+        font-size: 36px;
+      }
+      @include tablet {
+        font-size: 36px;
+      }
+      @include large {
         font-size: 36px;
       }
     }
@@ -101,10 +138,22 @@
       top: unset;
       bottom: 0;
     }
+    @include tablet {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
 
     img {
       width: 700px;
+      filter: drop-shadow(5px 5px 10px #2e2d2d);
+
       @include mobile {
+        width: 350px;
+        margin-top: 10px;
+      }
+      @include tablet {
         width: 350px;
         margin-top: 10px;
       }

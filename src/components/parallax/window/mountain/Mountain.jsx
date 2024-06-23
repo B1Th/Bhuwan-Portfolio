@@ -16,11 +16,11 @@ const Mountain = () => {
     <section ref={ref}>
       <motion.div className="heading" style={{ y: yText }}>
         <h2>
-          <span>Hello </span>World!
+          <span style={{ color: "lightGray" }}>Hello </span>World!
         </h2>
         <h4>
           Welcome To
-          <span> My World!</span>
+          <span style={{ color: "lightGray" }}> My World!</span>
         </h4>
       </motion.div>
       <motion.div className="mountains"></motion.div>
