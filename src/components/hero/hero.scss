@@ -9,7 +9,6 @@
   .socialContainer {
     position: absolute;
     height: calc(100vh - 100px);
-
     display: flex;
     align-items: flex-end;
 
@@ -121,6 +120,11 @@
         font-weight: 300;
         cursor: pointer;
         z-index: 100;
+
+        @include mobile {
+          padding: 15px;
+          margin-right: 10px;
+        }
       }
     }
 
@@ -156,11 +160,10 @@
 
       @include mobile {
         width: 350px;
-        margin-top: 10px;
+        margin-top: 15px;
       }
       @include tablet {
         width: 350px;
-        margin-top: 10px;
       }
     }
   }
