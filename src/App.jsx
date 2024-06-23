@@ -1,3 +1,4 @@
+// src/App.js
 import { useEffect, useState } from "react";
 import "./app.scss";
 import Contact from "./components/contact/Contact";
@@ -17,10 +18,19 @@ const App = () => {
       setLoading(false);
     };
 
-    window.addEventListener("load", handleLoad);
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+      document.addEventListener("DOMContentLoaded", handleLoad);
+    }
+
+    const timeoutId = setTimeout(handleLoad, 5000);
 
     return () => {
+      clearTimeout(timeoutId);
       window.removeEventListener("load", handleLoad);
+      document.removeEventListener("DOMContentLoaded", handleLoad);
     };
   }, []);
 
