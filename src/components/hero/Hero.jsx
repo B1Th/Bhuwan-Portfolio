@@ -43,57 +43,65 @@ const Hero = () => {
     <div className="hero">
       <div className="socialContainer">
         <div className="wrapper">
-        <motion.hr
-          initial={{ y: -500, opacity: 0 }}
-          animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
-        />
-        <motion.div
-          className="social"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.a
-            href="https://www.facebook.com/bhuwan.thapa.15/"
-            target="_blank"
+          <motion.hr
+            initial={{ y: -500, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1, delay: 0.5 },
+            }}
+          />
+          <motion.div
+            className="social"
             variants={textVariants}
-            whileHover={{ scale: 1.1 }}
+            initial="initial"
+            animate="animate"
           >
-            <img src="/facebook.png" alt="Facebook" />
-          </motion.a>
-          <motion.a
-            href="https://www.instagram.com/bhuwan__thapa/"
-            target="_blank"
-            variants={textVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <img src="/instagram.png" alt="Instagram" />
-          </motion.a>
-          <motion.a
-            href="https://www.linkedin.com/in/bhuwan-thapa-2551361a3/"
-            target="_blank"
-            variants={textVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <img src="/linkedin.png" alt="YouTube" />
-          </motion.a>
-          <motion.a
-            href="https://github.com/B1Th"
-            target="_blank"
-            variants={textVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <img
-              src="/github.png"
-              style={{ backgroundColor: "lightGray", padding: "2px" }}
-              alt="Dribbble"
-            />
-          </motion.a>
-        </motion.div>
-        <motion.hr
-          initial={{ y: 500, opacity: 0 }}
-          animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
-        />
+            <motion.a
+              href="https://www.facebook.com/bhuwan.thapa.15/"
+              target="_blank"
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img src="/facebook.png" alt="Facebook" />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/bhuwan__thapa/"
+              target="_blank"
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img src="/instagram.png" alt="Instagram" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/bhuwan-thapa-2551361a3/"
+              target="_blank"
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img src="/linkedin.png" alt="YouTube" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/B1Th"
+              target="_blank"
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img
+                src="/github.png"
+                style={{ backgroundColor: "lightGray", padding: "2px" }}
+                alt="Dribbble"
+              />
+            </motion.a>
+          </motion.div>
+          <motion.hr
+            initial={{ y: 500, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1, delay: 0.5 },
+            }}
+          />
         </div>
       </div>
 
