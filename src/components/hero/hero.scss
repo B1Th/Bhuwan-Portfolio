@@ -5,6 +5,19 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
   position: relative;
+  .social {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    gap: 10px;
+
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
 
   .slidingTextContainer {
     position: absolute;
@@ -14,7 +27,7 @@
     color: #ffffff09;
     width: 100%;
     font-weight: bold;
-    z-index: 1; 
+    z-index: 1;
   }
 
   .wrapper {
@@ -22,7 +35,7 @@
     height: 100%;
     margin: auto;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
   }
 
   .textContainer {
@@ -91,7 +104,6 @@
 
     img {
       width: 700px;
-
       @include mobile {
         width: 350px;
         margin-top: 10px;

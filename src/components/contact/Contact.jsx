@@ -45,6 +45,7 @@ const Contact = () => {
   return (
     <motion.div
       className="contact"
+      id="Contact"
       variants={variants}
       initial="initial"
       whileInView="animate"

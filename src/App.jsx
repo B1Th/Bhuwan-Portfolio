@@ -13,9 +13,15 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const handleLoad = () => {
       setLoading(false);
-    }, 3000);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   return (
@@ -29,14 +35,9 @@ const App = () => {
             <Navbar />
             <Hero />
           </section>
-          <section>
-            <Parallax type="services" />{" "}
-          </section>
+          <Parallax />
           <section id="Services">
             <Services />
-          </section>
-          <section id="Portfolio">
-            <Parallax type="portfolio" />{" "}
           </section>
           <Portfolio />
           <section id="Contact">

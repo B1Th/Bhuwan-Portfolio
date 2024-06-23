@@ -15,20 +15,14 @@ const Navbar = () => {
         >
           Bhuwan Thapa
         </motion.span>
-        <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" srcset="" />
+        <motion.button
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1, transition: { duration: 1 } }}
+        >
+          <a href="/bhuwan.pdf" download>
+            Download CV
           </a>
-          <a>
-            <img src="/instagram.png" alt="" srcset="" />
-          </a>
-          <a>
-            <img src="/youtube.png" alt="" srcset="" />
-          </a>
-          <a>
-            <img src="/dribbble.png" alt="" srcset="" />
-          </a>
-        </div>
+        </motion.button>
       </div>
     </div>
   );

@@ -42,12 +42,37 @@ const Hero = () => {
   return (
     <div className="hero">
       <motion.div
+        className="social"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 1,
+            staggerChildren: 0.1,
+          },
+        }}
+      >
+        <a href="#">
+          <img src="/facebook.png" alt="" srcset="" />
+        </a>
+        <a>
+          <img src="/instagram.png" alt="" srcset="" />
+        </a>
+        <a>
+          <img src="/youtube.png" alt="" srcset="" />
+        </a>
+        <a>
+          <img src="/dribbble.png" alt="" srcset="" />
+        </a>
+      </motion.div>
+      <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Developer Writer Content Creator
+        Developer Designer Content Creator
       </motion.div>
       <div className="wrapper">
         <motion.div
@@ -62,9 +87,11 @@ const Hero = () => {
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <motion.button variants={textVariants}>
-              See the Latest Works
+              <a href="#Portfolio"> See the Latest Works</a>
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>
+              <a href="#Contact">Contact Me</a>
+            </motion.button>
           </motion.div>
           <motion.img
             src="/scroll.png"

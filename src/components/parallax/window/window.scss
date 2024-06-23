@@ -1,0 +1,55 @@
+@import "../../../app.scss";
+
+.container {
+  height: 200vh;
+  position: relative;
+
+  .starContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    .star {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: repeat;
+      background-position: bottom;
+      background-image: url("/stars.png");
+      z-index: 1;
+    }
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .windowSection {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      overflow: hidden;
+
+      .window {
+        height: 100%;
+        width: 100%;
+        background-image: url("/window.png");
+        background-size: cover;
+        background-position: center;
+        z-index: 5;
+
+        @include mobile {
+        }
+      }
+    }
+
+    .mountainSection {
+      height: 100vh;
+      z-index: 1;
+    }
+  }
+}
