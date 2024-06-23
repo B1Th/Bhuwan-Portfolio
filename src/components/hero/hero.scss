@@ -9,12 +9,17 @@
   .socialContainer {
     position: absolute;
     height: calc(100vh - 100px);
-    width: 3%;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+    align-items: flex-end;
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+    }
 
     hr {
       height: 150px;

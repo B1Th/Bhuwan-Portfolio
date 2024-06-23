@@ -42,6 +42,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="socialContainer">
+        <div className="wrapper">
         <motion.hr
           initial={{ y: -500, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
@@ -93,6 +94,7 @@ const Hero = () => {
           initial={{ y: 500, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
         />
+        </div>
       </div>
 
       <motion.div
