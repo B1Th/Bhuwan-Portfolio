@@ -36,7 +36,7 @@ section {
     background-size: cover;
     background-position: bottom;
 
-    @include mobile {
+    @include tablet {
       background-size: contain;
       background-repeat: no-repeat;
     }

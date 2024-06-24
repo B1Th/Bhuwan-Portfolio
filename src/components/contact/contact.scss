@@ -8,6 +8,10 @@
   align-items: center;
   gap: 50px;
 
+  @include tablet {
+    padding: 20px;
+  }
+
   @include mobile {
     padding: 20px;
     flex-direction: column;
