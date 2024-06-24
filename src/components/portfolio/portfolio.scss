@@ -57,7 +57,7 @@
       flex: 1;
       height: 50%;
 
-      @include mobile {
+      @include tablet {
         height: 40%;
       }
 
@@ -90,6 +90,9 @@
 
       h2 {
         font-size: 48px;
+        @include tablet {
+          font-size: 36px;
+        }
 
         @include mobile {
           font-size: 32px;
@@ -102,7 +105,7 @@
         font-size: 19px;
         text-align: justify;
 
-        @include mobile {
+        @include tablet {
           font-size: 16px;
         }
       }

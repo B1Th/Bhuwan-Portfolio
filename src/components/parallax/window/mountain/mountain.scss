@@ -50,7 +50,7 @@ section {
     background-image: url("/planets.png");
     z-index: 1;
 
-    @include mobile {
+    @include tablet {
       top: -200px;
     }
   }
