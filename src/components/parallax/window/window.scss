@@ -10,15 +10,44 @@
     position: absolute;
     overflow: hidden;
 
-    .star {
+    .stars {
       height: 100%;
       width: 100%;
+      position: relative;
+      left: -20%;
       overflow: hidden;
       background-size: contain;
       background-repeat: repeat;
       background-position: bottom;
       background-image: url("/stars.png");
       z-index: 1;
+
+      @include tablet {
+        left: -30%;
+      }
+    }
+  }
+
+  .planetContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+
+    .planets {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-image: url("/planets.png");
+
+      @include tablet {
+        position: relative;
+        top: -300px;
+      }
     }
   }
 
@@ -41,15 +70,58 @@
         background-size: cover;
         background-position: center;
         z-index: 5;
-
-        @include mobile {
-        }
       }
     }
 
     .mountainSection {
       height: 100vh;
-      z-index: 1;
+      position: relative;
+      overflow: hidden;
+      z-index: 3;
+
+      .heading {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        z-index: 2;
+
+        @include mobile {
+          font-size: 24px;
+        }
+
+        span {
+          font-weight: 200;
+        }
+      }
+
+      .mountains {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: cover;
+        background-position: bottom;
+
+        @include tablet {
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      .mountainsContainer {
+        height: 100ch;
+        border: 5px solid white;
+      }
+
+      .mountains {
+        background-image: url("/mountains.png");
+        z-index: 3;
+      }
     }
   }
 }

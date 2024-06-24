@@ -43,13 +43,16 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <motion.img
+              src={item.img}
+              alt=""
+              whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
+            />
           </div>
 
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
           </motion.div>
         </div>
       </div>

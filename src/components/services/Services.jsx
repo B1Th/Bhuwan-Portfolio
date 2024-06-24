@@ -22,7 +22,9 @@ const Services = () => {
             <b>For Your </b>
             Business.
           </h1>
-          <button>What We Do?</button>
+          <button>
+            <a href="#Portfolio">What I Did?</a>
+          </button>
         </div>
       </div>
     </div>
