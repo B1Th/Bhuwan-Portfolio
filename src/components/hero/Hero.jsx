@@ -42,7 +42,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="socialContainer">
-        <div className="wrapper">
+        <div className="socialWrapper">
           <motion.hr
             initial={{ y: -500, opacity: 0 }}
             animate={{
@@ -113,40 +113,44 @@ const Hero = () => {
       >
         Developer Designer Content Creator
       </motion.div>
-      <div className="wrapper">
-        <motion.div
-          className="textContainer"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.h2 variants={textVariants}>BHUWAN THAPA</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer & UI designer
-          </motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              <a href="#Portfolio"> See the Latest Works</a>
-            </motion.button>
-            <motion.button variants={textVariants}>
-              <a href="#Contact">Contact Me</a>
-            </motion.button>
+      <div className="mainContainer">
+        <div className="containerWrapper">
+          <div className="textWrapper">
+            <motion.div
+              className="textContainer"
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+            >
+              <motion.h2 variants={textVariants}>BHUWAN THAPA</motion.h2>
+              <motion.h1 variants={textVariants}>
+                Web developer <br /> & UI designer
+              </motion.h1>
+              <motion.div className="buttons" variants={textVariants}>
+                <motion.button variants={textVariants}>
+                  <a href="#Portfolio"> See the Latest Works</a>
+                </motion.button>
+                <motion.button variants={textVariants}>
+                  <a href="#Contact">Contact Me</a>
+                </motion.button>
+              </motion.div>
+              <motion.img
+                src="/scroll.png"
+                alt="Scroll down"
+                variants={textVariants}
+                animate="scrollButton"
+              />
+            </motion.div>
+          </div>
+          <motion.div
+            className="imageContainer"
+            initial={{ y: 500, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+          >
+            <div className="imgProfile"></div>
           </motion.div>
-          <motion.img
-            src="/scroll.png"
-            alt="Scroll down"
-            variants={textVariants}
-            animate="scrollButton"
-          />
-        </motion.div>
+        </div>
       </div>
-      <motion.div
-        className="imageContainer"
-        initial={{ y: 500, opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
-      >
-        <img src="/profile.png" alt="Hero" />
-      </motion.div>
     </div>
   );
 };
