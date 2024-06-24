@@ -57,6 +57,11 @@
     width: 100%;
     font-weight: bold;
     z-index: 1;
+
+    @include mobile {
+      font-size: 20vh;
+      bottom: -20px;
+    }
   }
 
   .mainContainer {
