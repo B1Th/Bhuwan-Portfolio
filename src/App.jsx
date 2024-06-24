@@ -15,7 +15,9 @@ const App = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
     };
 
     if (document.readyState === "complete") {

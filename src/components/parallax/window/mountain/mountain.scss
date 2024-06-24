@@ -9,6 +9,7 @@ section {
     height: 100%;
     width: 100%;
     position: absolute;
+    top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,12 +17,14 @@ section {
     font-size: 40px;
     text-align: center;
     color: white;
+    z-index: 2;
+
+    @include mobile {
+      font-size: 24px;
+    }
 
     span {
       font-weight: 200;
-    }
-    @include mobile {
-      font-size: 36px;
     }
   }
 
@@ -45,10 +48,10 @@ section {
   }
   .planets {
     background-image: url("/planets.png");
-    z-index: 2;
+    z-index: 1;
 
     @include mobile {
-      top: -120px;
+      top: -200px;
     }
   }
 }

@@ -10,8 +10,8 @@ const Mountain = () => {
     offset: ["start center", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["-15%", "35%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["-20%", "70%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["-30%", "70%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["-20%", "40%"]);
   return (
     <section ref={ref}>
       <motion.div className="heading" style={{ y: yText }}>
