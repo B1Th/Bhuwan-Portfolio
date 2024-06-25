@@ -72,28 +72,6 @@
         max-height: 30%;
       }
 
-      .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 5px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      .imageContainer:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-      }
-
       img {
         height: 100%;
         width: 100%;
@@ -120,6 +98,7 @@
 
       h2 {
         font-size: 48px;
+
         @include tablet {
           font-size: 32px;
         }
@@ -132,7 +111,7 @@
 
       p {
         color: gray;
-        font-size: 19px;
+        font-size: 18px;
         text-align: justify;
 
         @include tablet {
