@@ -20,9 +20,9 @@ const items = [
   {
     id: 3,
     title: "Currency Exchange Converter",
-    img: "https://images.unsplash.com/photo-1625581859544-f0cc8f581bda?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/excurrency.png",
     desc: "Currency Exchange Converter facilitates straightforward conversion between different currencies. This tool utilizes real-time exchange rates to accurately convert values, making it essential for travelers, investors, and businesses needing to manage international transactions efficiently. With intuitive user interfaces and reliable data sources, it offers convenience and reliability in calculating and comparing currency values instantly.",
-    link: "https://github.com/B1Th/Currency-Exchange-Rate",
+    link: "https://heroic-dasik-25f7e6.netlify.app",
   },
   {
     id: 4,
