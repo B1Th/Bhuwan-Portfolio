@@ -9,6 +9,7 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import Preloader from "./components/preloader/Preloader";
+import About from "./components/about/About";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ const App = () => {
     const handleLoad = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      });
     };
 
     if (document.readyState === "complete") {
@@ -48,6 +49,9 @@ const App = () => {
             <Hero />
           </section>
           <Parallax />
+          <section id="About">
+            <About />
+          </section>
           <section id="Services">
             <Services />
           </section>

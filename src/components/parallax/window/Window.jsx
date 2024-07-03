@@ -41,13 +41,7 @@ const Window = () => {
         </section>
         <section className="mountainSection">
           <motion.div className="heading" style={{ y: yText }}>
-            <h2>
-              <span style={{ color: "lightGray" }}>Hello </span>World!
-            </h2>
-            <h4>
-              Welcome To
-              <span style={{ color: "lightGray" }}> My World!</span>
-            </h4>
+            <h2 style={{ color: "lightgray" }}>Who Am I?</h2>
           </motion.div>
           <motion.div className="mountains" style={{ y: yMount }}></motion.div>
         </section>
