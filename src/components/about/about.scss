@@ -94,13 +94,13 @@ main {
 
         p {
           font-size: 36px;
-          white-space: pre-wrap; /* Preserve white space and allow text wrapping */
+          white-space: pre-wrap;
           overflow: hidden;
           text-align: justify;
           padding: 10px 70px;
           font-weight: 200;
           letter-spacing: 1px;
-          position: relative; /* Ensure caret position relative to text */
+          position: relative;
 
           .caret {
             animation: blink-caret 0.75s step-end infinite;

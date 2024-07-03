@@ -7,13 +7,13 @@ const About = () => {
   const text = `I'm a frontend developer with a knack for creating dynamic and visually appealing web applications. Skilled in frontend technologies, I build responsive, user-friendly interfaces and integrate APIs for efficient solutions. Always eager to learn and innovate, I thrive on solving complex problems and bringing creative ideas to life.`;
 
   const aboutRef = useRef(null);
-  const animationComplete = useRef(false); // Track if animation has completed
+  const animationComplete = useRef(false);
 
   useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the element is visible
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -40,7 +40,7 @@ const About = () => {
   useEffect(() => {
     if (isInView && !animationComplete.current) {
       let index = 0;
-      const typingSpeed = 50; // Adjust typing speed in milliseconds
+      const typingSpeed = 50;
 
       const typeWriter = () => {
         if (index <= text.length) {
@@ -48,7 +48,7 @@ const About = () => {
           index++;
           setTimeout(typeWriter, typingSpeed);
         } else {
-          animationComplete.current = true; // Mark animation as complete
+          animationComplete.current = true;
         }
       };
 
