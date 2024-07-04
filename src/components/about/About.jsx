@@ -4,7 +4,7 @@ import "./about.scss";
 const About = () => {
   const [isInView, setIsInView] = useState(false);
   const [typedText, setTypedText] = useState("");
-  const text = `I'm a frontend developer with a knack for creating dynamic and visually appealing web applications. With skills in front-end technologies, I create interfaces that can respond well to different devices. When it comes to innovation, I find much interest in learning new things at all times so as not to get left behind by change – I am passionate about solving challenging issues.`;
+  const text = `I'm a Web Developer skilled in creating dynamic and visually appealing web applications. I've worked on various projects using different web technologies, showcasing my versatility and adaptability to new tools and frameworks. While I prefer working with the MERN stack, I also have experience with Django.`;
 
   const aboutRef = useRef(null);
   const animationComplete = useRef(false);
