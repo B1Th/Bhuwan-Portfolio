@@ -21,6 +21,9 @@ main {
       height: 70%;
       width: 90%;
     }
+    @include mobile {
+      height: 50%;
+    }
 
     .iconContainer {
       height: 100%;
@@ -111,7 +114,8 @@ main {
             padding: 10px 40px;
           }
           @include mobile {
-            font-size: 20px;
+            font-size: 16px;
+            padding: 10px 30px;
           }
         }
 
@@ -140,7 +144,7 @@ main {
             font-size: 20px;
           }
           @include mobile {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
