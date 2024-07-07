@@ -2,12 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import "./about.scss";
 
 const About = () => {
-  const [isInView, setIsInView] = useState(false);
   const [typedText, setTypedText] = useState("");
+  const [animationStarted, setAnimationStarted] = useState(false);
   const text = `I'm a Web Developer skilled in creating dynamic and visually appealing web applications. I've worked on various projects using different web technologies, showcasing my versatility and adaptability to new tools and frameworks. While I prefer working with the MERN stack, I also have experience with Django.`;
 
   const aboutRef = useRef(null);
-  const animationComplete = useRef(false);
 
   useEffect(() => {
     const options = {
@@ -18,10 +17,8 @@ const About = () => {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        } else {
-          setIsInView(false);
+        if (entry.isIntersecting && !animationStarted) {
+          setAnimationStarted(true);
         }
       });
     }, options);
@@ -35,10 +32,10 @@ const About = () => {
         observer.unobserve(aboutRef.current);
       }
     };
-  }, []);
+  }, [animationStarted]);
 
   useEffect(() => {
-    if (isInView && !animationComplete.current) {
+    if (animationStarted) {
       let index = 0;
       const typingSpeed = 50;
 
@@ -47,14 +44,12 @@ const About = () => {
           setTypedText(text.substring(0, index));
           index++;
           setTimeout(typeWriter, typingSpeed);
-        } else {
-          animationComplete.current = true;
         }
       };
 
       typeWriter();
     }
-  }, [isInView, text]);
+  }, [animationStarted, text]);
 
   return (
     <main>
