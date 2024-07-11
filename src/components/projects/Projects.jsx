@@ -43,7 +43,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section id="Portfolio">
+    <section id="projects">
       <div className="container">
         <div className="wrapper">
           <div className="videoContainer" ref={ref}>
@@ -70,7 +70,7 @@ const Single = ({ item }) => {
   );
 };
 
-const Portfolio = () => {
+const Projects = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -84,7 +84,7 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="projects" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
@@ -96,4 +96,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
