@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import "./portfolio.scss";
+import "./projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
@@ -43,7 +43,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section id="projects">
+    <section id="Projects">
       <div className="container">
         <div className="wrapper">
           <div className="videoContainer" ref={ref}>
