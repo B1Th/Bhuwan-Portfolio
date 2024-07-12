@@ -19,13 +19,21 @@ const items = [
   },
   {
     id: 3,
+    title: "Typing Quest: An Adventure Awaits",
+    vid: "/excurrency.mp4",
+    desc: "Type Quest features a fantasy-themed word set, real-time feedback, and a scoring system that challenges players to improve their typing speed and accuracy. Players type randomly generated words, with correct entries marked green and errors red. The game continuously adds new words as players progress. A final score screen shows correct and incorrect answers. This engaging tool gamifies typing practice, making it both fun and educational for users looking to enhance their typing skills.",
+    link: "https://heroic-dasik-25f7e6.netlify.app",
+  },
+  {
+    id: 4,
     title: "Currency Exchange Converter",
     vid: "/excurrency.mp4",
     desc: "Currency Exchange Converter facilitates straightforward conversion between different currencies. This tool utilizes real-time exchange rates to accurately convert values, making it essential for travelers, investors, and businesses needing to manage international transactions efficiently. With intuitive user interfaces and reliable data sources, it offers convenience and reliability in calculating and comparing currency values instantly.",
     link: "https://heroic-dasik-25f7e6.netlify.app",
   },
+
   {
-    id: 4,
+    id: 5,
     title: "Personal Portfolio Site",
     vid: "/portfoliosite.mp4",
     desc: "A personal portfolio site designed to show off my skills and talents. It's a vibrant showcase of my best work, achievements, and expertise, perfect for catching the eye of employers, clients, or anyone curious about what I can do. With a clean, easy-to-use design, it makes sure that my creativity and abilities shine through. This portfolio is my way of saying, \"Here's what I'm capable of!\"",
