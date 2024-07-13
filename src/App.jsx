@@ -6,7 +6,7 @@ import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
-import Projects from "./components/projects/Projects";
+// import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 import Preloader from "./components/preloader/Preloader";
 import About from "./components/about/About";
@@ -55,7 +55,7 @@ const App = () => {
           <section id="Services">
             <Services />
           </section>
-          <Projects />
+          {/* <Projects /> */}
           <section id="Contact">
             <Contact />
           </section>
