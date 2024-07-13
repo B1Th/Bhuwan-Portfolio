@@ -20,7 +20,7 @@ const items = [
   {
     id: 3,
     title: "Typing Quest: An Adventure Awaits",
-    vid: "/excurrency.mp4",
+    vid: "/typingquest.mp4",
     desc: "Type Quest features a fantasy-themed word set, real-time feedback, and a scoring system that challenges players to improve their typing speed and accuracy. Players type randomly generated words, with correct entries marked green and errors red. The game continuously adds new words as players progress. A final score screen shows correct and incorrect answers. This engaging tool gamifies typing practice, making it both fun and educational for users looking to enhance their typing skills.",
     link: "https://typingquest.netlify.app/",
   },
