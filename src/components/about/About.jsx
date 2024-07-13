@@ -1,8 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import "./about.scss";
 import { motion, spring, useScroll, useTransform } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const About = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const [typedText, setTypedText] = useState("");
   const [animationStarted, setAnimationStarted] = useState(false);
   const text = `I'm a Web Developer skilled in creating dynamic and visually appealing web applications. I've worked on various projects using different web technologies, showcasing my versatility and adaptability to new tools and frameworks. While I prefer working with the MERN stack, I also have experience with Django.`;
@@ -57,7 +59,11 @@ const About = () => {
     offset: ["start end", "end end"],
   });
 
-  const ytext = useTransform(scrollYProgress, [0, 1], ["-700%", "0%"]);
+  const ytext = useTransform(
+    scrollYProgress,
+    [0, 1],
+    isMobile ? ["-1200%", "0%"] : ["-700%", "0%"]
+  );
 
   return (
     <main>

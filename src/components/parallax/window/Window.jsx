@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import "./window.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const Window = () => {
   const windowRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const { scrollYProgress: scrollYProgress1 } = useScroll({
     target: windowRef,
@@ -23,7 +25,11 @@ const Window = () => {
   const scale = useTransform(scrollYProgress1, [0, 1], [1, 9]);
   const xStar = useTransform(scrollYProgress2, [0, 1], ["0%", "50%"]);
   const yText = useTransform(scrollYProgress2, [0, 1], ["-40%", "60%"]);
-  const yPlanet = useTransform(scrollYProgress2, [0, 1], ["-40%", "60%"]);
+  const yPlanet = useTransform(
+    scrollYProgress2,
+    [0, 1],
+    isMobile ? ["-30%", "40%"] : ["-40%", "60%"]
+  );
   const yMount = useTransform(scrollYProgress3, [0, 1], ["10%", "0%"]);
 
   return (
