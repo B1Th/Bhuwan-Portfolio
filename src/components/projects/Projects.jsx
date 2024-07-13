@@ -8,28 +8,28 @@ const items = [
     title: "Resume Parser And Ranker",
     vid: "/resumeparser.mp4",
     desc: "A powerful resume parser that streamlines the recruitment process by automatically parsing resumes and ranking candidates based on their qualifications. Utilizing spaCy's Named Entity Recognition (NER) capabilities, it extracts key information from resumes, such as skills, experience, and education, enabling the application to effectively rank candidates according to the job description.",
-    link: "https://creative-shortbread-02f6c5.netlify.app",
+    link: "https://resumeparse.netlify.app/",
   },
   {
     id: 2,
     title: "Text To Image Generator",
     vid: "/imagegen.mp4",
     desc: "A sophisticated Text-To-Image generator that interprets descriptive text to produce high-quality images, seamlessly translating concepts into vibrant visuals. This tool utilizes pretrained Stable Diffusion models, to cater to artists, designers, and developers. It facilitates the creation of detailed illustrations, virtual environments, or artistic creations with precision and creativity.",
-    link: "https://monumental-gecko-f9f035.netlify.app",
+    link: "https://txt2gen.netlify.app/",
   },
   {
     id: 3,
     title: "Typing Quest: An Adventure Awaits",
     vid: "/excurrency.mp4",
     desc: "Type Quest features a fantasy-themed word set, real-time feedback, and a scoring system that challenges players to improve their typing speed and accuracy. Players type randomly generated words, with correct entries marked green and errors red. The game continuously adds new words as players progress. A final score screen shows correct and incorrect answers. This engaging tool gamifies typing practice, making it both fun and educational for users looking to enhance their typing skills.",
-    link: "https://heroic-dasik-25f7e6.netlify.app",
+    link: "https://typingquest.netlify.app/",
   },
   {
     id: 4,
     title: "Currency Exchange Converter",
     vid: "/excurrency.mp4",
     desc: "Currency Exchange Converter facilitates straightforward conversion between different currencies. This tool utilizes real-time exchange rates to accurately convert values, making it essential for travelers, investors, and businesses needing to manage international transactions efficiently. With intuitive user interfaces and reliable data sources, it offers convenience and reliability in calculating and comparing currency values instantly.",
-    link: "https://heroic-dasik-25f7e6.netlify.app",
+    link: "https://currencyproexchange.netlify.app/",
   },
 
   {
