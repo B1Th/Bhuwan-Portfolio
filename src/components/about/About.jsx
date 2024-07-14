@@ -7,7 +7,7 @@ const About = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const [typedText, setTypedText] = useState("");
   const [animationStarted, setAnimationStarted] = useState(false);
-  const text = `I'm a web developer who has a degree in computer engineering. I specialize in creating dynamic and visually appealing web applications and have worked on various projects using different tools and frameworks. While I have solid experience with the MERN stack, my expertise lies in frontend development.`;
+  const text = `I'm a computer engineer based in Nepal with a passion for web development. I specialize in the MERN stack with a solid foundation in frontend development. My portfolio showcases diverse projects built with a range of web technologies.`;
 
   const aboutRef = useRef(null);
 
