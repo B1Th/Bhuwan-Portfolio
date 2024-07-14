@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 $gold: #ffb900;
 $coral: #fc636b;
 $brightCoral: #ff6d92;
@@ -14,64 +16,70 @@ $brightCoral: #ff6d92;
   right: 0;
   top: 0;
   transition: opacity 1s;
-}
 
-#phrase_box {
-  display: flex;
-  flex-flow: column;
-  height: 150px;
-  overflow: hidden;
-  width: 260px;
-}
+  #phrase_box {
+    display: flex;
+    flex-flow: column;
+    height: 150px;
+    overflow: hidden;
+    width: 260px;
 
-#phrases {
-  animation: slide-phrases-upward 20s;
-}
+    #phrases {
+      animation: slide-phrases-upward 20s;
 
-@keyframes slide-phrases-upward {
-  @for $i from 0 through 20 {
-    #{$i * 5%} {
-      transform: translateY($i * -50px);
+      text {
+        @include mobile {
+          font-size: 18px;
+        }
+      }
     }
-  }
-}
 
-@for $i from 0 through 20 {
-  #loadingCheckCircleSVG-#{$i} {
-    animation: fill-to-white 5000ms;
-    animation-delay: ($i - 1.5) * 1s;
-    fill: transparent;
-    opacity: 0;
-  }
-}
+    @keyframes slide-phrases-upward {
+      @for $i from 0 through 20 {
+        #{$i * 5%} {
+          transform: translateY($i * -50px);
+        }
+      }
+    }
 
-@keyframes fill-to-white {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    @for $i from 0 through 20 {
+      #loadingCheckCircleSVG-#{$i} {
+        animation: fill-to-white 5000ms;
+        animation-delay: ($i - 1.5) * 1s;
+        fill: transparent;
+        opacity: 0;
+      }
+    }
 
-@for $i from 0 through 20 {
-  #loadingCheckSVG-#{$i} {
-    animation: fill-to-coral 5000ms;
-    animation-delay: ($i - 1.5) * 1s;
-  }
-}
+    @keyframes fill-to-white {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
-@keyframes fill-to-coral {
-  0% {
-    fill: white;
-  }
-  10% {
-    fill: $brightCoral;
-  }
-  100% {
-    fill: $brightCoral;
+    @for $i from 0 through 20 {
+      #loadingCheckSVG-#{$i} {
+        animation: fill-to-coral 5000ms;
+        animation-delay: ($i - 1.5) * 1s;
+      }
+    }
+
+    @keyframes fill-to-coral {
+      0% {
+        fill: white;
+      }
+      10% {
+        fill: $brightCoral;
+      }
+      100% {
+        fill: $brightCoral;
+      }
+    }
   }
 }
