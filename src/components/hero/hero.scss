@@ -141,6 +141,8 @@
 
           h1 {
             font-size: 78px;
+            font-weight: 600;
+            letter-spacing: 3px;
 
             @include tablet {
               font-size: 58px;
