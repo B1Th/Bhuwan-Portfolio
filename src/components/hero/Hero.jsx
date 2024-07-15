@@ -128,7 +128,7 @@ const Hero = () => {
               </motion.h1>
               <motion.div className="buttons" variants={textVariants}>
                 <motion.button variants={textVariants}>
-                  <a href="#Projects"> See the Latest Works</a>
+                  <a href="#Projects"> See My Works</a>
                 </motion.button>
                 <motion.button variants={textVariants}>
                   <a href="#About">About Me</a>
@@ -142,7 +142,7 @@ const Hero = () => {
               />
             </motion.div>
           </div>
-          <motion.div
+          {/* <motion.div
             className="imageContainer"
             initial={{ y: 500, opacity: 0, scale: 0 }}
             animate={{
@@ -153,7 +153,7 @@ const Hero = () => {
             }}
           >
             <div className="imgProfile"></div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>
