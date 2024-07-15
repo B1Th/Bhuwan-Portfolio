@@ -24,19 +24,19 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 20,
-    },
-  },
-};
+// const sliderVariants = {
+//   initial: {
+//     x: 0,
+//   },
+//   animate: {
+//     x: "-220%",
+//     transition: {
+//       repeat: Infinity,
+//       repeatType: "mirror",
+//       duration: 20,
+//     },
+//   },
+// };
 
 const Hero = () => {
   return (
