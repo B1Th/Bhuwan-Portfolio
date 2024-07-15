@@ -88,16 +88,36 @@ const About = () => {
           <div className="iconContainer">
             <div className="icons">
               <div className="item">
-                <img src="/sign.png" alt="" />
+                <motion.img
+                  src="/sign.png"
+                  drag
+                  dragConstraints={aboutRef}
+                  alt="sign image"
+                />
               </div>
               <div className="item">
-                <img src="/internet.png" alt="" />
+                <motion.img
+                  src="/internet.png"
+                  drag
+                  dragConstraints={aboutRef}
+                  alt="internet image"
+                />
               </div>
               <div className="item">
-                <img src="/profile.png" alt="" />
+                <motion.img
+                  src="/profile.png"
+                  drag
+                  dragConstraints={aboutRef}
+                  alt="profile  image"
+                />
               </div>
               <div className="item">
-                <img src="/arrow.png" alt="" />
+                <motion.img
+                  src="/arrow.png"
+                  drag
+                  dragConstraints={aboutRef}
+                  alt="arrow image"
+                />
               </div>
             </div>
           </div>
