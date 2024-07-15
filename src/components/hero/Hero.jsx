@@ -131,7 +131,7 @@ const Hero = () => {
                   <a href="#Projects"> See the Latest Works</a>
                 </motion.button>
                 <motion.button variants={textVariants}>
-                  <a href="#Contact">Contact Me</a>
+                  <a href="#About">About Me</a>
                 </motion.button>
               </motion.div>
               <motion.img
