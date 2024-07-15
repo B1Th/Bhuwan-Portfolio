@@ -67,9 +67,17 @@ main {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          .item:nth-child(2) {
+            height: 40%;
+          }
 
           .item:nth-child(3) {
-            height: 40%;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
           }
 
           .item:nth-child(4) {

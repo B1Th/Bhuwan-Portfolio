@@ -94,7 +94,7 @@ const About = () => {
                 <img src="/internet.png" alt="" />
               </div>
               <div className="item">
-                <img src="/about.png" alt="" />
+                <img src="/profile.png" alt="" />
               </div>
               <div className="item">
                 <img src="/arrow.png" alt="" />
