@@ -24,19 +24,19 @@ const textVariants = {
   },
 };
 
-// const sliderVariants = {
-//   initial: {
-//     x: 0,
-//   },
-//   animate: {
-//     x: "-220%",
-//     transition: {
-//       repeat: Infinity,
-//       repeatType: "mirror",
-//       duration: 20,
-//     },
-//   },
-// };
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 20,
+    },
+  },
+};
 
 const Hero = () => {
   return (
@@ -105,14 +105,14 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <motion.div
+      <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Developer Designer Content Creator
-      </motion.div> */}
+      </motion.div>
       <div className="mainContainer">
         <div className="containerWrapper">
           <div className="textWrapper">
