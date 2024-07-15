@@ -105,14 +105,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Developer Designer Content Creator
-      </motion.div>
+      </motion.div> */}
       <div className="mainContainer">
         <div className="containerWrapper">
           <div className="textWrapper">
