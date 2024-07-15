@@ -92,6 +92,8 @@ const About = () => {
                   src="/sign.png"
                   drag
                   dragConstraints={aboutRef}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1, transition: { duration: 0.4 } }}
                   alt="sign image"
                 />
               </div>
@@ -100,6 +102,8 @@ const About = () => {
                   src="/internet.png"
                   drag
                   dragConstraints={aboutRef}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1, transition: { duration: 0.6 } }}
                   alt="internet image"
                 />
               </div>
@@ -108,6 +112,8 @@ const About = () => {
                   src="/profile.png"
                   drag
                   dragConstraints={aboutRef}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1, transition: { duration: 0.8 } }}
                   alt="profile  image"
                 />
               </div>
