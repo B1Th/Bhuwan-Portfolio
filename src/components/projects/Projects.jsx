@@ -26,7 +26,7 @@ const items = [
   },
   {
     id: 4,
-    title: "Currency Exchange Converter",
+    title: "CurrencyPro",
     vid: "/excurrency.mp4",
     desc: "Currency Exchange Converter facilitates straightforward conversion between different currencies. This tool utilizes real-time exchange rates to accurately convert values, making it essential for travelers, investors, and businesses needing to manage international transactions efficiently. With intuitive user interfaces and reliable data sources, it offers convenience and reliability in calculating and comparing currency values instantly.",
     link: "https://currencyproexchange.netlify.app/",
