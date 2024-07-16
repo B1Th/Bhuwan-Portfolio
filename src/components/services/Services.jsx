@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import "./services.scss";
 
 const Services = () => {
@@ -23,7 +22,7 @@ const Services = () => {
             Business.
           </h1>
           <button>
-            <a href="#Portfolio">What I Did?</a>
+            <a href="#Projects">What I Did?</a>
           </button>
         </div>
       </div>

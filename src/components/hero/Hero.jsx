@@ -367,12 +367,12 @@ const Hero = () => {
               </svg>
 
               <div className="buttons">
-                <button>
-                  <a href="#Projects"> See My Works</a>
-                </button>
-                <button>
+                <motion.button whileTap={{ scale: 1.1 }}>
+                  <a href="#Projects">See My Works</a>
+                </motion.button>
+                <motion.button whileTap={{ scale: 1.1 }}>
                   <a href="#About">About Me</a>
-                </button>
+                </motion.button>
               </div>
               <motion.img
                 src="/scroll.png"
