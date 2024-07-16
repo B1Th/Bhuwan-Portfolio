@@ -382,18 +382,6 @@ const Hero = () => {
               />
             </div>
           </div>
-          {/* <motion.div
-            className="imageContainer"
-            initial={{ y: 500, opacity: 0, scale: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              scale: 1,
-              transition: { duration: 1 },
-            }}
-          >
-            <div className="imgProfile"></div>
-          </motion.div> */}
         </div>
       </div>
     </div>

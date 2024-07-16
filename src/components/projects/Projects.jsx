@@ -31,13 +31,6 @@ const items = [
     desc: "Currency Exchange Converter facilitates straightforward conversion between different currencies. This tool utilizes real-time exchange rates to accurately convert values, making it essential for travelers, investors, and businesses needing to manage international transactions efficiently. With intuitive user interfaces and reliable data sources, it offers convenience and reliability in calculating and comparing currency values instantly.",
     link: "https://currencyproexchange.netlify.app/",
   },
-  {
-    id: 5,
-    title: "Personal Portfolio Site",
-    vid: "/portfoliosite.mp4",
-    desc: "A personal portfolio site designed to show off my skills and talents. It's a vibrant showcase of my best work, achievements, and expertise, perfect for catching the eye of employers, clients, or anyone curious about what I can do. With a clean, easy-to-use design, it makes sure that my creativity and abilities shine through. This portfolio is my way of saying, \"Here's what I'm capable of!\"",
-    link: "https://bhuwan-thapa.com.np",
-  },
 ];
 
 const Single = ({ item }) => {
