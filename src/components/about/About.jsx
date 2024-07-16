@@ -118,12 +118,7 @@ const About = () => {
                 />
               </div>
               <div className="item">
-                <motion.img
-                  src="/arrow.png"
-                  drag
-                  dragConstraints={aboutRef}
-                  alt="arrow image"
-                />
+                <img src="/arrow.png" alt="arrow image" />
               </div>
             </div>
           </div>
