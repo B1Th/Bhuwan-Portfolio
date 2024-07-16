@@ -129,12 +129,10 @@ const Hero = () => {
               >
                 BHUWAN THAPA
               </motion.h2>
-              {/* <motion.h1 variants={textVariants}>
-                Web developer <br /> & UI designer
-              </motion.h1> */}
               <svg
-                width="618"
-                height="165"
+                width="100%"
+                height="25%"
+                max-width="618"
                 viewBox="0 0 618 165"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

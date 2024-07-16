@@ -139,13 +139,6 @@
             }
           }
 
-          svg {
-            @include tablet {
-              font-size: 58px;
-              text-align: center;
-            }
-          }
-
           .buttons {
             button {
               padding: 20px;
