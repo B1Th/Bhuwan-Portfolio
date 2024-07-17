@@ -144,7 +144,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 4.4 },
+                    transition: { duration: 2, delay: 2.2 },
                   }}
                 />
                 <motion.path
@@ -154,7 +154,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 4.2 },
+                    transition: { duration: 2, delay: 2.1 },
                   }}
                 />
                 <motion.path
@@ -164,7 +164,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 4 },
+                    transition: { duration: 2, delay: 2 },
                   }}
                 />
                 <motion.path
@@ -174,7 +174,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 3.8 },
+                    transition: { duration: 2, delay: 1.9 },
                   }}
                 />
                 <motion.path
@@ -184,7 +184,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 3.6 },
+                    transition: { duration: 2, delay: 1.8 },
                   }}
                 />
                 <motion.path
@@ -194,7 +194,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 3.4 },
+                    transition: { duration: 2, delay: 1.7 },
                   }}
                 />
                 <motion.path
@@ -204,7 +204,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 3.2 },
+                    transition: { duration: 2, delay: 1.6 },
                   }}
                 />
                 <motion.path
@@ -214,7 +214,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 3 },
+                    transition: { duration: 2, delay: 1.5 },
                   }}
                 />
                 <motion.path
@@ -224,7 +224,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   whileInView={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 2.8 },
+                    transition: { duration: 2, delay: 1.4 },
                   }}
                 />
                 <motion.path
@@ -234,7 +234,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 2.6 },
+                    transition: { duration: 2, delay: 1.3 },
                   }}
                 />
                 <motion.path
@@ -244,7 +244,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 2.4 },
+                    transition: { duration: 2, delay: 1.2 },
                   }}
                 />
                 <motion.path
@@ -254,7 +254,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 2.2 },
+                    transition: { duration: 2, delay: 1.1 },
                   }}
                 />
                 <motion.path
@@ -264,7 +264,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 2 },
+                    transition: { duration: 2, delay: 1 },
                   }}
                 />
                 <motion.path
@@ -274,7 +274,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 1.8 },
+                    transition: { duration: 2, delay: 0.9 },
                   }}
                 />
                 <motion.path
@@ -284,7 +284,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 1.6 },
+                    transition: { duration: 2, delay: 0.8 },
                   }}
                 />
                 <motion.path
@@ -294,7 +294,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 1.4 },
+                    transition: { duration: 2, delay: 0.7 },
                   }}
                 />
                 <motion.path
@@ -304,7 +304,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 1.2 },
+                    transition: { duration: 2, delay: 0.6 },
                   }}
                 />
                 <motion.path
@@ -314,7 +314,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 1 },
+                    transition: { duration: 2, delay: 0.5 },
                   }}
                 />
                 <motion.path
@@ -324,7 +324,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 0.8 },
+                    transition: { duration: 2, delay: 0.4 },
                   }}
                 />
                 <motion.path
@@ -334,7 +334,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 0.6 },
+                    transition: { duration: 2, delay: 0.3 },
                   }}
                 />
                 <motion.path
@@ -344,7 +344,7 @@ const Hero = () => {
                   initial={{ pathLength: 0 }}
                   animate={{
                     pathLength: 1,
-                    transition: { duration: 2, delay: 0.4 },
+                    transition: { duration: 2, delay: 0.2 },
                   }}
                 />
                 <motion.path
