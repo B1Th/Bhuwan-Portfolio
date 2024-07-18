@@ -150,7 +150,8 @@ const Contact = () => {
 
         <motion.button className="arrowContainer" whileTap={{ scale: 0.9 }}>
           <a href="#Home">
-            <img src="/uparrow.png" alt="" />
+            <img className="arr1" src="/uparrow.png" alt="" />
+            <img className="arr2" src="/uparrow.png" alt="" />
           </a>
         </motion.button>
       </div>

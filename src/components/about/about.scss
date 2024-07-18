@@ -129,6 +129,7 @@ main {
           align-items: center;
           border-bottom: 1px solid gray;
           overflow: hidden;
+          z-index: -1;
 
           p {
             font-size: 36px;
