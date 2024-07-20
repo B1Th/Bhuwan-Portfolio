@@ -54,34 +54,9 @@ const About = () => {
     }
   }, [animationStarted, text]);
 
-  const { scrollYProgress } = useScroll({
-    target: aboutRef,
-    offset: ["start end", "end end"],
-  });
-
-  const ytext = useTransform(
-    scrollYProgress,
-    [0, 1],
-    isMobile ? ["-1200%", "0%"] : ["-700%", "0%"]
-  );
-
   return (
     <main>
       <div className="about" ref={aboutRef}>
-        <motion.div
-          className="underline"
-          initial={{ scale: 0 }}
-          whileInView={{
-            scale: 1,
-            transition: {
-              delay: 1,
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-            },
-          }}
-        ></motion.div>
-
         <div className="aboutContainer">
           <div className="iconContainer">
             <div className="icons">

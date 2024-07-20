@@ -26,7 +26,7 @@ const Window = () => {
   const yPlanet = useTransform(
     scrollYProgress2,
     [0, 1],
-    isMobile ? ["-30%", "50%"] : ["-40%", "60%"]
+    isMobile ? ["-40%", "40%"] : ["-40%", "60%"]
   );
   const yMount = useTransform(scrollYProgress3, [0, 1], ["10%", "0%"]);
 

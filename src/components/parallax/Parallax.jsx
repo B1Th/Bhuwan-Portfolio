@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./parallax.scss";
 import Window from "./window/Window";
 import { useRef } from "react";
@@ -7,7 +7,9 @@ import { useMediaQuery } from "react-responsive";
 
 const Parallax = () => {
   const ref = useRef();
+  const headingRef = useRef();
   const isMobile = useMediaQuery({ maxWidth: 767 });
+  const [isInAboutSection, setIsInAboutSection] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -25,11 +27,42 @@ const Parallax = () => {
     isMobile ? ["-20%", "58%"] : ["-18%", "55%"]
   );
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.73,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsInAboutSection(true);
+        } else {
+          setIsInAboutSection(false);
+        }
+      });
+    }, options);
+
+    const aboutSection = document.querySelector(".about");
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+
+    return () => {
+      if (aboutSection) {
+        observer.unobserve(aboutSection);
+      }
+    };
+  }, []);
+
   return (
     <div className="parallax" ref={ref}>
       <Window />
-      <motion.div className="heading" style={{ y: yText }}>
-        <h2 style={{ color: "lightgray" }}>Who Am I?</h2>
+      <motion.div className="heading" style={{ y: yText }} ref={headingRef}>
+        <h2 style={{ color: isInAboutSection ? "orange" : "lightgray" }}>
+          Who Am I?
+        </h2>
       </motion.div>
       <div className="starContainer">
         <motion.div className="stars" style={{ x: xStar }} />

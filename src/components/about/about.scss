@@ -17,25 +17,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
-
-    .heading {
-      font-size: 40px;
-
-      @include mobile {
-        font-size: 24px;
-      }
-      .underline {
-        height: 2px;
-        width: 100%;
-        background-color: orange;
-      }
-    }
 
     .aboutContainer {
       height: 70%;
       width: 70%;
-      margin-top: 3%;
+      margin-top: 5%;
       border: 1px solid gray;
       display: flex;
       justify-content: center;
