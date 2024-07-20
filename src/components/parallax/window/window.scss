@@ -4,30 +4,6 @@
   height: 200vh;
   position: relative;
 
-  .starContainer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-
-    .stars {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      left: -20%;
-      overflow: hidden;
-      background-size: contain;
-      background-repeat: repeat;
-      background-position: bottom;
-      background-image: url("/stars.png");
-      z-index: 1;
-
-      @include tablet {
-        left: -25%;
-      }
-    }
-  }
-
   .planetContainer {
     height: 100%;
     width: 100%;
@@ -78,24 +54,6 @@
       position: relative;
       overflow: hidden;
       z-index: 3;
-
-      .heading {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 40px;
-        text-align: center;
-        color: white;
-        z-index: 2;
-
-        @include mobile {
-          font-size: 24px;
-        }
-      }
 
       .mountains {
         height: 100%;

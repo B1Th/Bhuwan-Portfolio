@@ -5,6 +5,7 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
   position: relative;
+  z-index: 10000;
 
   .socialContainer {
     position: absolute;

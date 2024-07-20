@@ -23,20 +23,15 @@ const Window = () => {
   });
 
   const scale = useTransform(scrollYProgress1, [0, 1], [1, 9]);
-  const xStar = useTransform(scrollYProgress2, [0, 1], ["0%", "50%"]);
-  const yText = useTransform(scrollYProgress2, [0, 1], ["-40%", "60%"]);
   const yPlanet = useTransform(
     scrollYProgress2,
     [0, 1],
-    isMobile ? ["-30%", "40%"] : ["-40%", "60%"]
+    isMobile ? ["-30%", "50%"] : ["-40%", "60%"]
   );
   const yMount = useTransform(scrollYProgress3, [0, 1], ["10%", "0%"]);
 
   return (
     <div className="container" ref={windowRef}>
-      <div className="starContainer">
-        <motion.div className="stars" style={{ x: xStar }}></motion.div>
-      </div>
       <div className="planetContainer">
         <motion.div className="planets" style={{ y: yPlanet }}></motion.div>
       </div>
@@ -46,9 +41,6 @@ const Window = () => {
           <motion.div className="window" style={{ scale }}></motion.div>
         </section>
         <section className="mountainSection">
-          <motion.div className="heading" style={{ y: yText }}>
-            <h2 style={{ color: "lightgray" }}>Who Am I?</h2>
-          </motion.div>
           <motion.div className="mountains" style={{ y: yMount }}></motion.div>
         </section>
       </div>

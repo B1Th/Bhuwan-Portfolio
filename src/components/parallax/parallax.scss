@@ -1,0 +1,45 @@
+@import "../../app.scss";
+
+.parallax {
+  position: relative;
+
+  .heading {
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .starContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+
+    .stars {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      left: -20%;
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: repeat;
+      background-position: bottom;
+      background-image: url("/stars.png");
+
+      @include tablet {
+        left: -25%;
+      }
+    }
+  }
+}

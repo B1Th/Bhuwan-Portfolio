@@ -68,22 +68,20 @@ const About = () => {
   return (
     <main>
       <div className="about" ref={aboutRef}>
-        <motion.div className="heading" style={{ y: ytext }}>
-          <h2 style={{ color: "lightgray" }}>Who Am I?</h2>
-          <motion.div
-            className="underline"
-            initial={{ scale: 0 }}
-            whileInView={{
-              scale: 1,
-              transition: {
-                delay: 1,
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-              },
-            }}
-          ></motion.div>
-        </motion.div>
+        <motion.div
+          className="underline"
+          initial={{ scale: 0 }}
+          whileInView={{
+            scale: 1,
+            transition: {
+              delay: 1,
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+            },
+          }}
+        ></motion.div>
+
         <div className="aboutContainer">
           <div className="iconContainer">
             <div className="icons">
