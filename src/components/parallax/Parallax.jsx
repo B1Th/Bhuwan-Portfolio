@@ -31,7 +31,7 @@ const Parallax = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.75,
+      threshold: 0.7555,
     };
 
     const observer = new IntersectionObserver((entries) => {
