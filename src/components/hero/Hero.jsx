@@ -59,14 +59,6 @@ const Hero = () => {
             animate="animate"
           >
             <motion.a
-              href="https://www.facebook.com/bhuwan.thapa.15/"
-              target="_blank"
-              variants={textVariants}
-              whileHover={{ scale: 1.1 }}
-            >
-              <img src="/facebook.png" alt="Facebook" />
-            </motion.a>
-            <motion.a
               href="https://www.instagram.com/bhuwan__thapa/"
               target="_blank"
               variants={textVariants}
@@ -74,13 +66,22 @@ const Hero = () => {
             >
               <img src="/instagram.png" alt="Instagram" />
             </motion.a>
+
             <motion.a
               href="https://www.linkedin.com/in/bhuwan-thapa-2551361a3/"
               target="_blank"
               variants={textVariants}
               whileHover={{ scale: 1.1 }}
             >
-              <img src="/linkedin.png" alt="YouTube" />
+              <img src="/linkedin.png" alt="Linkedin" />
+            </motion.a>
+            <motion.a
+              href="https://dribbble.com/BH1TH"
+              target="_blank"
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img src="/dribble.png" alt="Dribble" />
             </motion.a>
             <motion.a
               href="https://github.com/B1Th"
@@ -91,7 +92,7 @@ const Hero = () => {
               <img
                 src="/github.png"
                 style={{ backgroundColor: "lightGray", padding: "2px" }}
-                alt="Dribbble"
+                alt="Github"
               />
             </motion.a>
           </motion.div>
