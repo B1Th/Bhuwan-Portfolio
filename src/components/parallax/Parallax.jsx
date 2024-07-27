@@ -4,12 +4,13 @@ import Window from "./window/Window";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { useSpring } from "framer-motion";
 
 const Parallax = () => {
   const ref = useRef();
   const headingRef = useRef();
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [isInAboutSection, setIsInAboutSection] = useState(false);
+  const [showUnderline, setShowUnderline] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -27,42 +28,35 @@ const Parallax = () => {
     isMobile ? ["-20%", "58%"] : ["-18%", "55%"]
   );
 
+  const underlineWidth = useSpring(0, {
+    stiffness: 100,
+    damping: 10,
+  });
+
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.765,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsInAboutSection(true);
-        } else {
-          setIsInAboutSection(false);
-        }
-      });
-    }, options);
-
-    const aboutSection = document.querySelector(".about");
-    if (aboutSection) {
-      observer.observe(aboutSection);
-    }
-
-    return () => {
-      if (aboutSection) {
-        observer.unobserve(aboutSection);
+    const unsubscribe = scrollYProgress.onChange((latest) => {
+      if (latest >= 1) {
+        setShowUnderline(true);
+        underlineWidth.set(150);
+      } else {
+        setShowUnderline(false);
+        underlineWidth.set(0);
       }
-    };
-  }, []);
+    });
+    return () => unsubscribe();
+  }, [scrollYProgress]);
 
   return (
     <div className="parallax" ref={ref}>
       <Window />
       <motion.div className="heading" style={{ y: yText }} ref={headingRef}>
-        <h2 style={{ color: isInAboutSection ? "orange" : "lightgray" }}>
-          Who Am I?
-        </h2>
+        <h2>Who Am I?</h2>
+        {showUnderline && (
+          <motion.div
+            className="underline"
+            style={{ width: underlineWidth }}
+          ></motion.div>
+        )}
       </motion.div>
       <div className="starContainer">
         <motion.div className="stars" style={{ x: xStar }} />
