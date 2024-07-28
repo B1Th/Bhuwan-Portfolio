@@ -18,7 +18,7 @@ const Navbar = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1, transition: { duration: 1 } }}
         >
-          <a href="/bhuwan.pdf" download>
+          <a href="/bhuwanCV.pdf" download>
             Download CV
           </a>
         </motion.button>
