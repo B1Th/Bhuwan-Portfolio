@@ -35,7 +35,7 @@ const Parallax = () => {
 
   useEffect(() => {
     const unsubscribe = scrollYProgress.onChange((latest) => {
-      if (latest >= 1) {
+      if (latest >= 0.98) {
         setShowUnderline(true);
         underlineWidth.set(150);
       } else {
