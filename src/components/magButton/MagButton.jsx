@@ -28,7 +28,7 @@ const MagButton = ({ text, link, isDownloadable }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       animate={{ x: position.x, y: position.y }}
-      transition={{ type: "spring", stiffness: 50, damping: 50 }}
+      transition={{ type: "spring", stiffness: 100, damping: 50 }}
       {...(isDownloadable && { download: true })}
     >
       <p>{text}</p>
