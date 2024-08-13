@@ -141,22 +141,32 @@
           }
 
           .buttons {
-            button {
-              padding: 20px;
-              border: 1px solid white;
-              border-radius: 10px;
-              background-color: transparent;
-              color: white;
-              margin-right: 20px;
-              font-weight: 300;
-              cursor: pointer;
-              z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
 
-              @include mobile {
-                padding: 15px;
-                margin-right: 10px;
-              }
+            @include mobile {
+              flex-direction: column;
             }
+
+            // button {
+            //   padding: 20px;
+            //   border: 1px solid white;
+            //   border-radius: 10px;
+            //   background-color: transparent;
+            //   color: white;
+            //   margin-right: 20px;
+            //   font-weight: 300;
+            //   cursor: pointer;
+            //   z-index: 100;
+
+            //   @include mobile {
+            //     padding: 15px;
+            //     margin-right: 10px;
+            //   }
+            // }
           }
 
           img {

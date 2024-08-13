@@ -1,0 +1,53 @@
+@import "../../app.scss";
+
+.btn {
+  position: relative;
+  padding: 20px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 10px;
+  will-change: transform;
+  overflow: hidden;
+
+  @include mobile {
+    font-size: 14px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+}
+
+.btn span {
+  position: relative;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: 1s, left 0s, top 0s;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  width: 250px;
+  height: 250px;
+}
+
+.btn:hover {
+  color: black;
+  font-weight: 600;
+}

@@ -1,4 +1,3 @@
-// src/App.js
 import { useEffect, useState } from "react";
 import "./app.scss";
 import Contact from "./components/contact/Contact";

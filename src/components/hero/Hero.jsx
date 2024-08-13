@@ -1,6 +1,7 @@
 import { animate } from "framer-motion";
 import "./hero.scss";
 import { motion } from "framer-motion";
+import MagButton from "../magButton/MagButton";
 
 const textVariants = {
   initial: {
@@ -368,12 +369,14 @@ const Hero = () => {
               </svg>
 
               <div className="buttons">
-                <motion.button whileTap={{ scale: 1.1 }}>
+                <MagButton text="See My Works" link="#Projects" />
+                <MagButton text="About Me" link="#About" />
+                {/* <motion.button whileTap={{ scale: 1.1 }}>
                   <a href="#Projects">See My Works</a>
-                </motion.button>
-                <motion.button whileTap={{ scale: 1.1 }}>
+                </motion.button> */}
+                {/* <motion.button whileTap={{ scale: 1.1 }}>
                   <a href="#About">About Me</a>
-                </motion.button>
+                </motion.button> */}
               </div>
               <motion.img
                 src="/scroll.png"
