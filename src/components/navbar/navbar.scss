@@ -32,6 +32,10 @@
 
     .btn {
       padding: 15px 20px;
+
+      @include mobile {
+        padding: 13px;
+      }
     }
   }
 }

@@ -149,6 +149,7 @@
             color: white;
 
             @include mobile {
+              gap: 10px;
               flex-direction: column;
             }
 
