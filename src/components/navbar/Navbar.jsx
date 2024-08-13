@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
+import MagButton from "../magButton/MagButton";
 
 const Navbar = () => {
   return (
@@ -14,14 +15,19 @@ const Navbar = () => {
         >
           Bhuwan Thapa
         </motion.span>
-        <motion.button
+
+        <motion.div
+          className="downloadBtn"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1, transition: { duration: 1 } }}
         >
-          <a href="/bhuwanCV.pdf" download>
-            Download CV
-          </a>
-        </motion.button>
+          <MagButton
+            text="Dowload CV"
+            link="/bhuwanCV.pdf"
+            isDownloadable={true}
+            style={{ padding: "10px" }}
+          />
+        </motion.div>
       </div>
     </div>
   );

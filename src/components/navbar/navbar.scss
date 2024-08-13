@@ -6,6 +6,7 @@
 
   .wrapper {
     max-width: 1200px;
+
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -25,14 +26,12 @@
       display: none;
     }
   }
-  button {
-    padding: 15px 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: transparent;
+  .downloadBtn {
     color: white;
-    font-weight: 300;
-    cursor: pointer;
     z-index: 100;
+
+    .btn {
+      padding: 15px 20px;
+    }
   }
 }

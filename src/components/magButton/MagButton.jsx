@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./MagButton.scss";
 
-const MagButton = ({ text, link }) => {
+const MagButton = ({ text, link, isDownloadable }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -29,8 +29,9 @@ const MagButton = ({ text, link }) => {
       onMouseLeave={handleMouseLeave}
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 50, damping: 50 }}
+      {...(isDownloadable && { download: true })}
     >
-      <span>{text}</span>
+      <p>{text}</p>
     </motion.a>
   );
 };
