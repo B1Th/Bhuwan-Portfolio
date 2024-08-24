@@ -97,6 +97,7 @@
         align-items: center;
         text-align: center;
         gap: 50px;
+        z-index: 60;
 
         @include tablet {
           gap: 25px;
