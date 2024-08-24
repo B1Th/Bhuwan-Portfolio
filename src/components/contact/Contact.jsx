@@ -141,7 +141,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               <textarea rows={8} placeholder="Message" name="message" />
-              <button>Submit</button>
+              <button style={{ color: "white" }}>Submit</button>
               {success && <div className="message">{success}</div>}
               {error && <div className="message">{error}</div>}
             </motion.form>
