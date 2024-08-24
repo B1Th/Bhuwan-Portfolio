@@ -13,40 +13,40 @@
   border-radius: 10px;
   will-change: transform;
   overflow: hidden;
+  transition: 0.5s;
 
   @include mobile {
     font-size: 12px;
     padding: 13px;
     margin-right: 10px;
   }
-}
 
-.btn {
-  position: relative;
-  transition: 0.5s;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+    z-index: -1;
+    pointer-events: none;
+  }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  transform: translate(-50%, -50%);
-  background-color: white;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  transition: 1s, left 0s, top 0s;
-  z-index: -1;
-  pointer-events: none;
-}
+  &:hover {
+    color: black;
+    font-weight: 600;
 
-.btn:hover::before {
-  width: 250px;
-  height: 250px;
-}
+    &::before {
+      width: 250px;
+      height: 250px;
+    }
+  }
 
-.btn:hover {
-  color: black;
-  font-weight: 600;
+  @include mobile {
+    touch-action: none;
+  }
 }
