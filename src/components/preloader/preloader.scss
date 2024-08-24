@@ -8,13 +8,10 @@ $brightCoral: #ff6d92;
   $opacity: 90%;
   align-items: center;
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  bottom: 0;
   display: flex;
   justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: fixed;
+  inset: 0;
   transition: opacity 1s;
 
   #phrase_box {
@@ -22,7 +19,7 @@ $brightCoral: #ff6d92;
     flex-flow: column;
     height: 200px;
     overflow: hidden;
-    width: 300px;
+    width: 250px;
 
     #phrases {
       animation: slide-phrases-upward 20s;
