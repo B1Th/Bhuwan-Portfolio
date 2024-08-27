@@ -9,7 +9,6 @@ import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 import Preloader from "./components/preloader/Preloader";
 import About from "./components/about/About";
-import SmoothScrolling from "./SmoothScrolling";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -39,30 +38,28 @@ const App = () => {
 
   return (
     <>
-      <SmoothScrolling>
-        {loading ? (
-          <Preloader />
-        ) : (
-          <div>
-            <Cursor />
-            <section id="Home">
-              <Navbar />
-              <Hero />
-            </section>
-            <Parallax />
-            <section id="About">
-              <About />
-            </section>
-            <section id="Services">
-              <Services />
-            </section>
-            <Projects />
-            <section id="Contact">
-              <Contact />
-            </section>
-          </div>
-        )}
-      </SmoothScrolling>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <div>
+          <Cursor />
+          <section id="Home">
+            <Navbar />
+            <Hero />
+          </section>
+          <Parallax />
+          <section id="About">
+            <About />
+          </section>
+          <section id="Services">
+            <Services />
+          </section>
+          <Projects />
+          <section id="Contact">
+            <Contact />
+          </section>
+        </div>
+      )}
     </>
   );
 };
