@@ -9,6 +9,7 @@ import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 import Preloader from "./components/preloader/Preloader";
 import About from "./components/about/About";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -38,28 +39,36 @@ const App = () => {
 
   return (
     <>
-      {loading ? (
-        <Preloader />
-      ) : (
-        <div>
-          <Cursor />
-          <section id="Home">
-            <Navbar />
-            <Hero />
-          </section>
-          <Parallax />
-          <section id="About">
-            <About />
-          </section>
-          <section id="Services">
-            <Services />
-          </section>
-          <Projects />
-          <section id="Contact">
-            <Contact />
-          </section>
-        </div>
-      )}
+      <ReactLenis
+        root
+        options={{
+          lerp: 1,
+          duration: 1,
+        }}
+      >
+        {loading ? (
+          <Preloader />
+        ) : (
+          <div>
+            <Cursor />
+            <section id="Home">
+              <Navbar />
+              <Hero />
+            </section>
+            <Parallax />
+            <section id="About">
+              <About />
+            </section>
+            <section id="Services">
+              <Services />
+            </section>
+            <Projects />
+            <section id="Contact">
+              <Contact />
+            </section>
+          </div>
+        )}
+      </ReactLenis>
     </>
   );
 };

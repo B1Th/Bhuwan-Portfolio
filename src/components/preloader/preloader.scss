@@ -19,7 +19,11 @@ $brightCoral: #ff6d92;
     flex-flow: column;
     height: 200px;
     overflow: hidden;
-    width: 250px;
+    width: 300px;
+
+    @include mobile {
+      width: 250px;
+    }
 
     #phrases {
       animation: slide-phrases-upward 20s;

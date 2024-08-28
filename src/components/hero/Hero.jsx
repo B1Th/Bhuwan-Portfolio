@@ -1,4 +1,3 @@
-import { animate } from "framer-motion";
 import "./hero.scss";
 import { motion } from "framer-motion";
 import MagButton from "../magButton/MagButton";
