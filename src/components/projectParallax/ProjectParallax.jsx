@@ -74,35 +74,35 @@ const ProjectParallax = () => {
   const springConfig = { stiffness: 300, damping: 50, bounce: 100 };
 
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.3], [15, 0]),
     springConfig
   );
 
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+    useTransform(scrollYProgress, [0, 0.3], [20, 0]),
     springConfig
   );
 
   const translateY = useSpring(
     useTransform(
       scrollYProgress,
-      [0, 0.2],
-      isTablet ? [400, 700] : [500, 1000]
+      [0, 0.3],
+      isTablet ? [400, 750] : [400, 1000]
     ),
     springConfig
   );
 
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+    useTransform(scrollYProgress, [0, 0.3], [0.1, 1]),
     springConfig
   );
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0.2, 1], isTablet ? [100, 450] : [0, 300]),
+    useTransform(scrollYProgress, [0.3, 1], isTablet ? [100, 450] : [0, 300]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0.2, 1], isTablet ? [100, -250] : [0, -300]),
+    useTransform(scrollYProgress, [0.3, 1], isTablet ? [100, -250] : [0, -300]),
     springConfig
   );
 
