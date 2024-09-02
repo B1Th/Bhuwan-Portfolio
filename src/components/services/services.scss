@@ -3,9 +3,11 @@
 .services {
   height: 250vh;
   position: relative;
+  overflow: hidden;
 
   @include tablet {
     padding: 20px;
+    height: 160vh;
   }
 
   .servicesContainer {

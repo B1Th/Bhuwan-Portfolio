@@ -3,6 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import "./ProjectParallax.scss";
 import { useSpring } from "framer-motion";
 import { useTransform } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const items = [
   {
@@ -63,6 +64,7 @@ const ProjectParallax = () => {
   const firstRow = items.slice(0, 5);
   const secondRow = items.slice(5, 10);
   const ref = useRef(null);
+  const isTablet = useMediaQuery({ maxWidth: 1024 });
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -82,7 +84,11 @@ const ProjectParallax = () => {
   );
 
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [500, 1000]),
+    useTransform(
+      scrollYProgress,
+      [0, 0.2],
+      isTablet ? [400, 700] : [500, 1000]
+    ),
     springConfig
   );
 

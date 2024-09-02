@@ -65,12 +65,12 @@
       background: transparent;
 
       @include tablet {
-        height: 30%;
+        height: 50%;
         flex: 2;
       }
 
       @include mobile {
-        max-height: 30%;
+        max-height: 50%;
       }
 
       video {
