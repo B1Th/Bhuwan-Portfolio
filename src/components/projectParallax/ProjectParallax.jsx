@@ -98,11 +98,11 @@ const ProjectParallax = () => {
   );
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0.2, 1], [0, 300]),
+    useTransform(scrollYProgress, [0.2, 1], isTablet ? [100, 450] : [0, 300]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0.2, 1], [0, -300]),
+    useTransform(scrollYProgress, [0.2, 1], isTablet ? [100, -250] : [0, -300]),
     springConfig
   );
 
