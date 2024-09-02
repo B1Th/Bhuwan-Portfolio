@@ -9,6 +9,7 @@ import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 import Preloader from "./components/preloader/Preloader";
 import About from "./components/about/About";
+import ProjectParallax from "./components/projectParallax/ProjectParallax";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -51,9 +52,7 @@ const App = () => {
           <section id="About">
             <About />
           </section>
-          <section id="Services">
-            <Services />
-          </section>
+          <Services />
           <Projects />
           <section id="Contact">
             <Contact />
